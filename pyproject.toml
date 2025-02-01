@@ -1,0 +1,38 @@
+[project]
+name = "401k-optimization"
+version = "0.1.0"
+description = "What 401k contributions to make?"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "cvxpy>=1.6.0",
+    "numpy>=2.2.2",
+    "pyscipopt>=5.2.1",
+    "scipy>=1.15.1",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.9.4",
+]
+
+[tool.ruff.lint]
+select = [
+    "A",
+    "B",
+    "C4",
+    "COM",
+    "E",
+    "F",
+    "I",
+    "ICN",
+    "ISC",
+    "PERF",
+    "Q",
+    "RUF",
+    "S",
+    "UP",
+    "W",
+]
+[tool.ruff.format]
+quote-style = "double"
